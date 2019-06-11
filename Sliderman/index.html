@@ -37,6 +37,36 @@
 			</div> <!-- cd-item-info -->
 		</li>
 	</ul> <!-- cd-gallery -->
+	<a href="javascript:void(0)" onclick="enlargex()" id="zoomtab">+ Enlarge</a>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script type="text/javascript">
+function enlargex(){
+	    if ($('body').css('transform') == 'scale(1.2)') {
+		    $('body').css('transform','scale(1)');
+			$('body').css('-webkit-transform','scale(1)');
+			$('body').css('-webkit-transform-origin','0 0');
+			$('body').css('-moz-transform','scale(1)');
+			$('body').css('-moz-transform-origin','0 0');
+			$('body').css('-o-transform','scale(1)');
+			$('body').css('-o-transform-origin','0 0');
+			$('body').css('-ms-transform','scale(1)');
+			$('body').css('-ms-transform-origin','0 0');
+			$('#zoomtab').html('+ Enlarge');
+		} else {
+			$('body').css('transform','scale(1.2)');
+			$('body').css('-webkit-transform','scale(1.2)');
+			$('body').css('-webkit-transform-origin','0 0');
+			$('body').css('-moz-transform','scale(1.2)');
+			$('body').css('-moz-transform-origin','0 0');
+			$('body').css('-o-transform','scale(1.2)');
+			$('body').css('-o-transform-origin','0 0');
+			$('body').css('-ms-transform','scale(1.2)');
+			$('body').css('-ms-transform-origin','0 0');
+			$('#zoomtab').html('- Shrink');
+		}
+	}
+</script>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.mobile.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
