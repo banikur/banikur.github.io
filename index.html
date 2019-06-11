@@ -299,7 +299,36 @@
         </div>
       </div>
     </div>
+<a href="javascript:void(0)" onclick="enlargex()" class="btn btn-xl btn-outline-light" id="zoomtab">+ Enlarge</a>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script type="text/javascript">
+function enlargex(){
+	    if ($('body').css('transform') == 'scale(1.2)') {
+		    $('body').css('transform','scale(1)');
+			$('body').css('-webkit-transform','scale(1)');
+			$('body').css('-webkit-transform-origin','0 0');
+			$('body').css('-moz-transform','scale(1)');
+			$('body').css('-moz-transform-origin','0 0');
+			$('body').css('-o-transform','scale(1)');
+			$('body').css('-o-transform-origin','0 0');
+			$('body').css('-ms-transform','scale(1)');
+			$('body').css('-ms-transform-origin','0 0');
+			$('#zoomtab').html('+ Enlarge');
+		} else {
+			$('body').css('transform','scale(1.2)');
+			$('body').css('-webkit-transform','scale(1.2)');
+			$('body').css('-webkit-transform-origin','0 0');
+			$('body').css('-moz-transform','scale(1.2)');
+			$('body').css('-moz-transform-origin','0 0');
+			$('body').css('-o-transform','scale(1.2)');
+			$('body').css('-o-transform-origin','0 0');
+			$('body').css('-ms-transform','scale(1.2)');
+			$('body').css('-ms-transform-origin','0 0');
+			$('#zoomtab').html('- Shrink');
+		}
+	}
+</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
