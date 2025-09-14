@@ -202,12 +202,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize typing effect when page loads
-    const taglineElement = document.querySelector('.hero-tagline');
-    if (taglineElement) {
-        const originalText = taglineElement.textContent;
+    const typingTextElement = document.querySelector('.typing-text');
+    if (typingTextElement) {
+        const originalText = typingTextElement.textContent;
+        typingTextElement.textContent = '';
         setTimeout(() => {
-            typeWriter(taglineElement, originalText, 150);
-        }, 1000);
+            typeWriter(typingTextElement, originalText, 100);
+        }, 2000);
+    }
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuToggle && navLinks) {
+        mobileMenuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            this.classList.toggle('active');
+        });
     }
 
     // Add hover effects to glass cards

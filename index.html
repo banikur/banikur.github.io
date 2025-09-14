@@ -11,38 +11,143 @@
 <body>
     <!-- Header/Hero Section -->
     <header class="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+
         <nav class="nav">
             <div class="nav-brand">
-                <span class="logo">IS</span>
+                <div class="logo-container">
+                    <span class="logo">IS</span>
+                    <div class="logo-glow"></div>
+                </div>
             </div>
             <div class="nav-links">
-                <a href="#about" class="nav-link">Tentang</a>
-                <a href="#skills" class="nav-link">Skill</a>
-                <a href="#experience" class="nav-link">Pengalaman</a>
-                <a href="#contact" class="nav-link">Kontak</a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Tentang</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skill</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Pengalaman</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Kontak</span>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
         
         <div class="hero-content">
             <div class="hero-image">
                 <div class="image-container">
-                    <img src="images/profile.jpeg" alt="Ilham Syabani" class="profile-img">
+                    <div class="image-frame">
+                        <img src="images/profile.jpeg" alt="Ilham Syabani" class="profile-img">
+                        <div class="image-overlay">
+                            <div class="status-indicator">
+                                <div class="status-dot"></div>
+                                <span>Available for work</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="image-glow"></div>
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-1">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon icon-4">
+                            <i class="fab fa-python"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="hero-text">
-                <h1 class="hero-name">Ilham Syabani</h1>
-                <p class="hero-tagline">Fullstack Web Developer</p>
-                <p class="hero-description">Membangun aplikasi web modern dengan fokus pada performa, keamanan, dan pengalaman pengguna yang optimal.</p>
-                <a href="#contact" class="cta-button">
-                    <span>Kontak Saya</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Fullstack Developer</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">Ilham</span>
+                    <span class="name-line">Syabani</span>
+                </h1>
+                <p class="hero-tagline">
+                    <span class="typing-text">Fullstack Web Developer</span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Membangun aplikasi web modern dengan fokus pada performa, keamanan, 
+                    dan pengalaman pengguna yang optimal. Spesialisasi dalam 
+                    <span class="highlight">System Design</span>, 
+                    <span class="highlight">Frontend Development</span>, dan 
+                    <span class="highlight">Backend Architecture</span>.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Tahun</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proyek</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">
+                        <span>Kontak Saya</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#experience" class="cta-button secondary">
+                        <i class="fas fa-download"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/ilham-syabani" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/banikur" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:banikur2103@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </div>
         
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="scroll-text">Scroll untuk eksplorasi</div>
+            <div class="scroll-arrow">
+                <div class="arrow-line"></div>
+                <div class="arrow-head"></div>
+            </div>
         </div>
     </header>
 
