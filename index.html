@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Ilham Sya'bani - Full Stack Developer</title>
-    <meta name="description" content="Full Stack Web Developer specializing in PHP, Laravel, JavaScript, and modern web technologies">
-    <meta name="keywords" content="Full Stack Developer, PHP, Laravel, JavaScript, Web Development">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ilham Syabani - Fullstack Web Developer</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Ilham Sya'bani</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Header/Hero Section -->
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="logo">IS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skills" class="nav-link">Skill</a>
+                <a href="#experience" class="nav-link">Pengalaman</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+        </nav>
+        
         <div class="hero-content">
-            <div class="hero-text fade-in-up">
-                <h1>Hi, I'm <span class="highlight">Mohammad Ilham Sya'bani</span></h1>
-                <span class="subtitle">Full Stack Web Developer</span>
-                <p>Building digital solutions with modern technologies. Specializing in PHP, Laravel, JavaScript, and creating robust web applications that make a difference.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i>
-                        View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
-                    </a>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/profile.jpeg" alt="Ilham Syabani" class="profile-img">
+                    <div class="image-glow"></div>
                 </div>
             </div>
-            <div class="hero-image fade-in-up">
-                <div class="profile-card">
-                    <img src="images/profile.jpeg" alt="Mohammad Ilham Sya'bani" class="profile-image">
-                    <h3>Full Stack Developer</h3>
-                    <p>5+ Years Experience</p>
+            <div class="hero-text">
+                <h1 class="hero-name">Ilham Syabani</h1>
+                <p class="hero-tagline">Fullstack Web Developer</p>
+                <p class="hero-description">Membangun aplikasi web modern dengan fokus pada performa, keamanan, dan pengalaman pengguna yang optimal.</p>
+                <a href="#contact" class="cta-button">
+                    <span>Kontak Saya</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Sebagai Fullstack Web Developer dengan pengalaman sejak 2019, saya memiliki keahlian mendalam dalam 
+                        perancangan sistem, pengembangan frontend dan backend, serta desain UI/UX. Saya fokus pada 
+                        membangun solusi teknologi yang scalable, maintainable, dan user-friendly.
+                    </p>
+                    <p class="about-description">
+                        Dengan latar belakang yang kuat dalam berbagai teknologi modern, saya mampu mengelola proyek 
+                        dari konsep hingga deployment, memastikan setiap aplikasi yang dibangun memenuhi standar 
+                        kualitas tertinggi dan memberikan nilai bisnis yang optimal.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Tahun Pengalaman</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Proyek Selesai</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,227 +87,166 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title scroll-animate">Technical Skills</h2>
-            <p class="section-subtitle scroll-animate">Technologies and tools I work with to build amazing web applications</p>
-            
+            <div class="section-header">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category scroll-animate">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">PHP & Laravel</div>
-                                <div class="skill-description">Building scalable web applications</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level expert">Expert</div>
-                                <div class="project-count">8+ Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">REST API Development</div>
-                                <div class="skill-description">Creating robust API endpoints</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level expert">Expert</div>
-                                <div class="project-count">6+ Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">CodeIgniter</div>
-                                <div class="skill-description">Lightweight PHP framework</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level advanced">Advanced</div>
-                                <div class="project-count">3+ Projects</div>
-                            </div>
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="skill-title">System Design</h3>
+                    <p class="skill-description">Perancangan arsitektur sistem yang scalable dan maintainable</p>
+                    <div class="skill-tags">
+                        <span class="tag">Microservices</span>
+                        <span class="tag">API Design</span>
+                        <span class="tag">Database Design</span>
                     </div>
                 </div>
-
-                <div class="skill-category scroll-animate">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">JavaScript & jQuery</div>
-                                <div class="skill-description">Interactive user interfaces</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level advanced">Advanced</div>
-                                <div class="project-count">10+ Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">HTML5 & CSS3</div>
-                                <div class="skill-description">Modern web standards</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level expert">Expert</div>
-                                <div class="project-count">15+ Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">Bootstrap & Responsive Design</div>
-                                <div class="skill-description">Mobile-first approach</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level expert">Expert</div>
-                                <div class="project-count">12+ Projects</div>
-                            </div>
-                        </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">Membangun antarmuka pengguna yang responsif dan interaktif</p>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">TypeScript</span>
                     </div>
                 </div>
-
-                <div class="skill-category scroll-animate">
-                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">MySQL & PostgreSQL</div>
-                                <div class="skill-description">Database design and optimization</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level advanced">Advanced</div>
-                                <div class="project-count">8+ Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">Git & Version Control</div>
-                                <div class="skill-description">Collaborative development</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level advanced">Advanced</div>
-                                <div class="project-count">All Projects</div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <div class="skill-name">Microsoft .NET</div>
-                                <div class="skill-description">Desktop applications</div>
-                            </div>
-                            <div class="skill-meta">
-                                <div class="skill-level intermediate">Intermediate</div>
-                                <div class="project-count">2+ Projects</div>
-                            </div>
-                        </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Pengembangan server-side dan API yang robust</p>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Desain antarmuka yang intuitif dan user-friendly</p>
+                    <div class="skill-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Adobe XD</span>
+                        <span class="tag">Prototyping</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title scroll-animate">Featured Projects</h2>
-            <p class="section-subtitle scroll-animate">Some of the projects I've worked on that showcase my skills and experience</p>
+            <div class="section-header">
+                <h2 class="section-title">Pengalaman & Proyek</h2>
+                <div class="title-line"></div>
+            </div>
             
-            <div class="projects-grid">
-                <div class="project-card scroll-animate">
-                    <img src="images/p1.png" alt="Minerba Monitoring System" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Minerba Monitoring Online System</h3>
-                        <p class="project-description">Web-based monitoring system for mineral and coal sales verification with real-time data processing and reporting capabilities.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">Lumen</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Fullstack Web Developer</h3>
+                            <span class="timeline-period">2019 - Sekarang</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
+                        <p class="timeline-description">
+                            Mengembangkan aplikasi web fullstack dengan fokus pada performa dan skalabilitas. 
+                            Bertanggung jawab atas arsitektur sistem, pengembangan API, dan implementasi frontend 
+                            yang responsif dan user-friendly.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card scroll-animate">
-                    <img src="images/p2.png" alt="Sales Verification Module" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Sales Verification Module</h3>
-                        <p class="project-description">Automated verification system for mineral and coal sales with integrated document management and approval workflow.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">REST API</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">E-Commerce Platform</h3>
+                            <span class="timeline-period">2023 - 2024</span>
+                        </div>
+                        <p class="timeline-description">
+                            Membangun platform e-commerce lengkap dengan fitur payment gateway, 
+                            manajemen inventory, dan dashboard admin. Mencapai peningkatan 40% 
+                            dalam conversion rate.
+                        </p>
+                        <div class="timeline-tech">
                             <span class="tech-tag">Vue.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card scroll-animate">
-                    <img src="images/p3.png" alt="BigPop Coffee Order System" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">BigPop Coffee Table Order</h3>
-                        <p class="project-description">Complete ordering system for coffee shop with both web interface and desktop application for seamless operations.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Desktop App</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card scroll-animate">
-                    <img src="images/p4.png" alt="Smart Library SESKOAL" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Smart Library SESKOAL</h3>
-                        <p class="project-description">Customized library management system with advanced search capabilities and digital resource management.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Slims</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Customization</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card scroll-animate">
-                    <img src="images/p5.png" alt="Minerba One Data V2" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Minerba One Data V2</h3>
-                        <p class="project-description">Comprehensive data management platform for mining industry with advanced analytics and reporting features.</p>
-                        <div class="tech-stack">
                             <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Stripe API</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Lihat Demo
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card scroll-animate">
-                    <img src="images/p1.png" alt="Sidukops SOPS Polri" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Sidukops (SOPS) Polri</h3>
-                        <p class="project-description">Standard Operating Procedures system for Indonesian National Police with document management and workflow automation.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Workflow</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Sistem Manajemen Inventori</h3>
+                            <span class="timeline-period">2022 - 2023</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
+                        <p class="timeline-description">
+                            Mengembangkan sistem manajemen inventori untuk perusahaan manufaktur 
+                            dengan fitur real-time tracking, laporan otomatis, dan integrasi barcode scanner.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
                         </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Lihat Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Aplikasi Mobile Web PWA</h3>
+                            <span class="timeline-period">2021 - 2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Membuat Progressive Web App untuk layanan delivery dengan fitur 
+                            geolocation, push notification, dan offline capability.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">Service Worker</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Google Maps API</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Lihat Demo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -289,23 +256,57 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="contact-content">
-                <h2 class="section-title scroll-animate">Let's Work Together</h2>
-                <p class="section-subtitle scroll-animate">Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.</p>
-                
-                <div class="contact-buttons">
-                    <a href="mailto:banikur2103@gmail.com" class="contact-btn">
-                        <i class="fas fa-envelope"></i>
-                        Send Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohammad-ilham-sya-bani-16822411a/" target="_blank" class="contact-btn">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/banikur" target="_blank" class="contact-btn">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Mari Berkolaborasi</h3>
+                    <p class="contact-description">
+                        Siap untuk membawa ide proyek Anda menjadi kenyataan? 
+                        Mari diskusikan bagaimana saya dapat membantu mewujudkan visi digital Anda.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:banikur2103@gmail.com">banikur2103@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/ilham-syabani" target="_blank">ilham-syabani</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Kirim Pesan</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -314,11 +315,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Mohammad Ilham Sya'bani. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 Ilham Syabani – Hosted on GitHub Pages</p>
+                <div class="footer-links">
+                    <a href="#about">Tentang</a>
+                    <a href="#skills">Skill</a>
+                    <a href="#experience">Pengalaman</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/enhanced-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
