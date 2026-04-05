@@ -79,10 +79,10 @@
         .container { max-width: 1600px; margin: 0 auto; padding: 0 4vw; }
         .section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 15vh 0; position: relative; }
         
-        .title-huge { font-size: clamp(3rem, 9.5vw, 8rem); line-height: 0.95; letter-spacing: -2px; margin-bottom: 2rem; }
-        .title-section { font-size: clamp(2.5rem, 6vw, 5rem); margin-bottom: 3rem; text-transform: uppercase; letter-spacing: -1px; }
+        .title-huge { font-size: clamp(2.2rem, 10vw, 8rem); line-height: 0.95; letter-spacing: -2px; margin-bottom: 2rem; }
+        .title-section { font-size: clamp(2rem, 7vw, 5rem); margin-bottom: 3rem; text-transform: uppercase; letter-spacing: -1px; }
         .title-small { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .text-lead { font-size: clamp(1rem, 1.5vw, 1.25rem); color: var(--text-dim); max-width: 600px; margin-bottom: 3rem; }
+        .text-lead { font-size: clamp(1rem, 3.5vw, 1.25rem); color: var(--text-dim); max-width: 600px; margin-bottom: 3rem; }
         
         /* Safe Glitch Effect */
         .glitch-hover:hover {
@@ -176,7 +176,7 @@
         /* Contact */
         #contact { text-align: center; border-bottom: none; }
         .contact-email { 
-            font-size: clamp(2rem, 5vw, 4rem); font-family: var(--font-display); 
+            font-size: clamp(1.5rem, 8vw, 4rem); font-family: var(--font-display); 
             display: inline-block; position: relative; color: var(--text-main); font-weight: 800;
             line-height: 1.2; margin: 4rem 0;
         }
@@ -191,8 +191,10 @@
 
         @media (max-width: 768px) {
             .nav-links { display: none; }
+            .section { padding: 10vh 0; min-height: auto; }
             .about-grid { grid-template-columns: 1fr; gap: 3rem; }
             .about-visual { aspect-ratio: 1/1; }
+            .projects-list { gap: 5rem; }
             .project-item, .project-item:nth-child(even) { grid-template-columns: 1fr; gap: 2rem; }
             .project-item:nth-child(even) .project-content { order: 0; }
             .skill-row { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -349,7 +351,7 @@
         <!-- Contact Section -->
         <section id="contact" class="section" style="min-height: 80vh;">
             <div class="container">
-                <h2 class="title-section split-type" style="margin-bottom: 0.5rem; font-size: clamp(2.5rem, 5vw, 4.5rem);">HAVE A PROBLEM<br>WORTH SOLVING?</h2>
+                <h2 class="title-section split-type" style="margin-bottom: 0.5rem; font-size: clamp(2rem, 8vw, 4.5rem);">HAVE A PROBLEM<br>WORTH SOLVING?</h2>
                 <p class="text-lead split-type" style="margin: 0 auto 3rem auto; max-width: 800px; color: var(--text-dim);">Got a system to build, a product to rescue,<br>or a team that needs direction? Let's talk.</p>
                 <a href="#" id="enc-mailto" class="contact-email hover-target split-type glitch-hover" style="margin-top: 2rem;"
                    data-u="banikur2103" data-d="gmail.com">
