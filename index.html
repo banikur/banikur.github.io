@@ -351,12 +351,11 @@
             <div class="container">
                 <h2 class="title-section split-type" style="margin-bottom: 0.5rem; font-size: clamp(2.5rem, 5vw, 4.5rem);">HAVE A PROBLEM<br>WORTH SOLVING?</h2>
                 <p class="text-lead split-type" style="margin: 0 auto 3rem auto; max-width: 800px; color: var(--text-dim);">Got a system to build, a product to rescue,<br>or a team that needs direction? Let's talk.</p>
-                <a href="#" class="contact-email hover-target split-type glitch-hover" style="margin-top: 2rem;"
-                   data-u="banikur2103" data-d="gmail.com"
-                   onclick="event.preventDefault(); window.location.href = 'mailto:' + this.dataset.u + '@' + this.dataset.d;">
+                <a href="#" id="enc-mailto" class="contact-email hover-target split-type glitch-hover" style="margin-top: 2rem;"
+                   data-u="banikur2103" data-d="gmail.com">
                     Mail Me
                 </a>
-                <div class="social-links stag-fade gsap-fade-up">
+                <div class="social-links stag-fade">
                     <a href="https://github.com/banikur" class="hover-target">GitHub</a>
                     <a href="https://www.linkedin.com/in/syabani-ilham/" class="hover-target">LinkedIn</a>
                 </div>
@@ -559,13 +558,20 @@
                 }
             });
 
-            // 6. Skills Reveal Stagger Fade
+            // 6. Reveal Stagger Fade
             document.querySelectorAll('.stag-fade').forEach(container => {
+                gsap.set(container.children, { opacity: 0, y: 30 });
                 gsap.to(container.children, {
                     scrollTrigger: { trigger: container, start: 'top 85%' },
                     opacity: 1, y: 0, duration: 0.8, stagger: 0.05, ease: 'power2.out'
                 });
             });
+
+            // 7. Reconstruct obfuscated email address for functionality
+            const mailBtn = document.getElementById('enc-mailto');
+            if(mailBtn) {
+                mailBtn.href = 'mailto:' + mailBtn.dataset.u + '@' + mailBtn.dataset.d;
+            }
 
             // 7. Image Parallax Effect
             document.querySelectorAll('.parallax-container').forEach(container => {
